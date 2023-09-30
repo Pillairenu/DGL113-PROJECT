@@ -1,0 +1,952 @@
+/*
+Author: Renu Gopinatha Pillai
+Purpose: Includes the css code to style all the pages in this website.
+Last Modified: 2023-03-29
+*/
+
+/*---------------------Common style for all pages--------------------*/
+
+html {
+  font-size: 62.5%; /* Set the root font size on all pages to 62.5% */
+}
+header {
+
+  width: 100%;
+  
+  background-color: rgb(86, 167, 182);
+}
+body{
+  font-size: 16px;
+}
+h1,
+h2 {
+color: white;
+font-family: 'Roboto Slab', serif;
+font-weight: bold;
+text-align: center;
+}
+
+h1 {
+font-size: 6rem;
+margin-top: 25vh;
+}
+
+h2 {
+font-size: 3rem;
+}
+
+/*-------- LOGO & NAVIGATION ---------*/
+.header-logo
+{
+  display: flex;
+}
+.logo-img {
+  width: 70%;
+  padding-left: 15%;
+}
+.header-nav
+{
+  width: 100%;
+}
+.nav {
+  margin-left: auto;  
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 8%;
+
+}
+nav li 
+{
+  padding-left: 2%;
+  margin-left: 10%;
+  display: inline-block;
+  text-transform: uppercase;
+  
+}
+li a
+{
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+  
+}
+/*------------Footer---------------*/
+footer{
+
+  color: white;
+  width: 100%;
+  background-color: rgb(86, 167, 182);
+  
+  }
+  .main-footer
+  {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: auto auto auto auto auto;
+  margin-left: 8%;
+  font-family: 'Roboto Slab', serif;
+  font-size:1.8rem;
+  line-height: 200%;
+  }
+  .main-footer a{
+  text-decoration: underline;
+  color: white;
+  }
+  .main-footer ul {
+  
+  list-style-type: none;
+  }
+  .main-footer li {
+  
+  margin-left: -12%;
+  }
+
+/*-------------------Home Page Style--------------------------*/
+
+/*-------VIDEO--------*/
+#background-video,
+.video-overlay {
+margin-top: 12%;
+margin-left: .5%;
+width: 99vw;
+height: 60vh;
+object-fit: cover;
+position: absolute;
+left: 0;
+top: 0;
+z-index: -1;
+}
+
+.video-overlay {
+background-color: black;
+opacity: 0.3;
+}
+
+
+.main-content 
+{
+margin-top: 30vh;
+font-size: 4rem;
+color:rgb(86, 167, 182) ;
+text-align: center;
+padding: 1.5%;
+
+}
+.para-content{
+
+margin-left: 2%;
+width: 100%;
+font-family: 'Merriweather Sans', sans-serif;/* applied a Google Font to the content */
+font-size: 17px;
+line-height: 1.7em;
+text-align: left;
+}
+
+.content{
+display: grid;
+margin-top: -2%;
+gap: 15px;
+grid-template-columns: 60% auto;
+}
+
+/*-------NEWS BOX--------*/
+aside {
+width: 80%;
+position: relative;
+left: 15%;
+font-family: 'Merriweather Sans', sans-serif;/* applied a Google Font to the content */
+font-size: 17px;
+line-height: 2em;
+border-style: solid;
+border-color:  #4CAF50;
+top:5%;
+
+}
+.news-head
+{
+
+color: white;
+padding: 2%;
+background-color: #4CAF50;
+margin-top: 0%;
+}
+ul.news-list{
+list-style-type: square;
+padding-left: 6%;
+}
+
+.course-container
+{
+padding:1% ;
+}
+.course-container h3
+{
+font-size: 3rem;
+color:rgb(86, 167, 182) ;
+}
+.course-container p{
+font-family: 'Merriweather Sans', sans-serif;/* applied a Google Font to the content */
+font-size: 17px;
+line-height: 1.7em;
+text-align: left;
+}
+.index-content
+{
+padding:2%;
+line-height: 1.7em;
+}
+.footer-disclaimer
+{
+text-align: left;
+}
+
+/*-------LATEST GLASS WORK--------*/
+.latest-image-container
+{
+display: grid;
+gap: 2px;
+grid-template-columns: 25% 25% 25% 25%;
+align-items: center;
+margin-left: 6%;
+}
+
+.latest-image {
+
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 60%;
+height: 50%;
+}
+.latest-image:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.gradient-container
+{
+border-style: none;
+background: linear-gradient(-45deg, #4981bb, #4b986c, #f8a65c, #d6585d, #595784);
+}
+
+/*----------------------Styles for Gallery Page-----------------------------*/
+.main-image
+{
+  background-image: url(image/team-members_75.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  padding-top: 18em;
+  padding-bottom: 2em;
+  margin-top: 1%;
+}
+main {
+margin-top: 1%;
+padding: 1%;
+}
+.spottext {
+
+font-size: 6rem;
+color: white;
+line-height: 1.4em;
+text-align: center;
+margin-bottom: 20px;
+
+}
+.gallery-content{
+
+padding: 4%;
+}
+.gallery-content p{
+font-family: 'Poppins', sans-serif;/* applied a Google Font to the content */
+font-size: 17px;
+line-height: 1.7em;
+margin-top: -5vh;
+}
+.image-column
+{
+display: grid;
+gap:1%;
+grid-template-columns: auto auto auto auto;
+justify-content: center;
+padding: 2%;
+margin-left: 4%;
+
+}
+/*-------image thumbnail--------*/
+.gallery-img{
+
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 65%;
+height: 65%;
+}
+.gallery-img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+.main-content-gallery 
+{
+margin-top: 5vh;
+font-size: 4rem;
+color:rgb(86, 167, 182) ;
+text-align: center;
+}
+
+/*---------------------Style for Contact page-------------------------------*/
+
+.main-image-contact
+{
+  background-image: url(image/contact-page-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  background-position: 50% 50%;
+  padding-top: 18em;
+  padding-bottom: 2em;
+  margin-top: -1%;
+}
+
+hr
+{
+width:100%;
+text-align:left;
+margin-left:0;
+}
+/* .contact-content
+{
+padding-top: 3%;
+padding-left: 22%;
+width:85%
+
+} */
+.contact-section
+{
+margin-bottom: 5px;
+font-size: 17px;
+line-height: 1.4em;
+font-family: 'Poppins', sans-serif;
+}
+.contact-section h3
+
+{
+font-size: 2rem;
+color: rgb(240, 93, 91);
+}
+.form-heading
+{
+  margin-top: -3%;
+font-size: 3rem;
+color:  rgb(73, 129, 187);
+}
+.contact-content
+{
+  margin-top: 2%;
+}
+
+/*--------------------contact form-----------------------------*/
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 5%;
+resize: vertical;
+}
+
+input[type=submit] {
+background-color: rgb(240, 93, 91);
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin-top: 3%;
+width: 19%;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+
+
+}
+textarea {
+height: 100px;
+}
+.contact-form {
+width: 50%;
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 5%;
+
+font-family: 'Poppins', sans-serif;
+
+}
+
+.contact-container
+{
+display: grid;
+gap: 2px;
+grid-template-columns: 50% 50%;
+padding-bottom: 3%;
+align-items: start;
+justify-items: center;
+}
+
+form span
+{
+  color: #f39c12;
+  font-size: 13px;
+}
+
+
+/*--------Success Message-------------------*/
+
+/* Modal Box */
+
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content1 {
+  background-color: rgb(86, 167, 182); 
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+  
+}
+.modal-content1 p{
+  color: white;
+  font-size: 1.6rem;
+}
+
+/* The Close Button */
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The ok Button */
+#okbtn
+{
+  background-color:  rgb(240, 93, 91);
+  color:white;
+  border:none;
+}
+
+
+
+
+/*----------------iframe----------------------*/
+.googlemap {
+  margin-top: 6%;
+  width: 100%;
+  height: 430px;
+  margin-bottom: 3%;
+}
+/*-----------------------------Style for Supplies Page-----------------------------*/
+.supplies-image
+{
+  background-image: url(image/supplies.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  padding-top: 18em;
+  padding-bottom: 2em;
+  margin-top: 1%;
+}
+
+/*-------pdf button--------*/
+.button-container
+{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%; 
+padding:1.5%;
+}
+
+.button {
+background-color:  rgb(240, 93, 91);
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+}
+.button:hover {
+background-color: #4CAF50; /* Green  HOVER*/
+
+}
+
+.supply-image-container
+{
+display: grid;
+gap: 2px;
+grid-template-columns: auto auto auto auto auto;
+align-items: center;
+margin-left: 6%;
+}
+
+.supplies-img{
+
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 50%;
+height: 50%;
+}
+.supplies-img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.kit-container h2{
+
+font-size: 2.5rem;
+color:white;
+text-align: left;
+font-family: 'Merriweather Sans', sans-serif;
+padding-bottom: 2%;
+text-align: center;
+border-style: none;
+padding: 1%;
+width: 95%;
+background-color: #4CAF50;
+}
+
+.kit-container
+{
+padding: 2%;
+}
+
+.grinder-img
+{
+width:50%;
+height: 50%;
+}
+/*-------Table for Kits and Grinders--------*/
+table {
+
+width: 100%;
+padding:2%;
+
+}
+
+tr,td,th{
+text-align: left;
+width: 20%;
+font-family: 'Poppins', sans-serif; 
+line-height: 1.7em;
+}
+td
+{
+padding: 2%;
+}
+
+.kit-img
+
+{
+width:80%;
+max-width: 100%;
+height: auto;
+}
+
+/*--------Modal Image-------------------*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.kit-container table
+{
+table-layout: auto;
+width:100%;
+
+}
+.kit-container p
+{
+text-align: center;
+font-size: 2rem;
+color: rgb(240, 93, 91);
+}
+.kit-container a{
+text-decoration: underline;
+text-transform: lowercase;
+color: rgb(73, 129, 187);
+}
+
+/*----------------------------Media Query- 320px--------------------------*/
+
+
+@media screen and (min-width: 320px)  {
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  nav .toggle {
+    display: block;
+  }
+  .show-items {
+    display: flex;
+  }
+  nav
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .toggle {
+    align-self: flex-end;
+    position: absolute;
+    margin-top: 5%;
+    margin-right: 10%;
+   
+  }
+  .nav {
+    margin-left: auto;  
+  }
+  .main-footer
+  {
+  display: grid;
+  grid-template-columns: 1fr;
+  }
+  .main-footer li {
+    margin-left: -9%;
+    }
+  #background-video, .video-overlay {
+    margin-top: 31%;
+    margin-left: 2.1%;
+    width: 96vw;
+    height: 85vh;
+  }
+  .main-content 
+  {
+  margin-top: 25vh;
+  }
+  .content{
+  display: grid;
+  grid-template-columns: 1fr;
+
+  }
+  
+  .image-column
+  {
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  padding-bottom: 45%;
+
+
+  }
+
+  .contact-container
+  {
+  display: grid;
+
+  grid-template-columns: 100%;
+  }
+  .contact-form {
+    width: 50%;
+  }
+  /* .contact-content
+  {
+
+  width:60%
+
+  } */
+ 
+ 
+  .supplies-image {
+    padding-top: 4em;
+    padding-bottom: 0em;
+  }
+  .spottext {
+    font-size: 4rem;
+  }
+  .main-image-contact {
+  
+    padding-top: 10em;
+   
+  }
+  input[type=submit] {
+    
+    width: 25%;
+  }
+    .main-image {
+      
+      padding-top: 9em;
+      padding-bottom: 1em;
+  }
+  .kit-container h2 {
+    font-size: 1.5rem;
+  }
+
+  }
+
+
+/*-----------------------------Media Query-768px---------------------------*/
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    display: flex;
+  }
+  nav .toggle {
+    display: none;
+  }
+  .header-nav {
+    
+    margin-right: 35%;
+}
+#background-video, .video-overlay {
+  margin-top: 14%;
+  margin-left: 1.1%;
+  width: 98vw;
+  height: 68vh;
+}
+.main-content 
+{
+margin-top: 32vh;
+}
+.image-column
+{
+display: grid;
+grid-template-columns: 20% 20% 20%;
+padding-bottom: 5%;
+}
+
+.contact-container
+{
+display: grid;
+
+grid-template-columns: 100%;
+}
+.contact-form {
+  width: 50%;
+  
+}
+/* .contact-content
+{
+
+width:50%
+
+} */
+.main-footer li {
+margin-left: -5%;
+}
+
+.supplies-image {
+  padding-top: 12em;
+  padding-bottom: 0em;
+}
+.spottext {
+  font-size: 5rem;
+}
+.main-image-contact {
+  
+  padding-top: 12em;
+ 
+}
+input[type=submit] {
+    
+  width: 23%;
+}
+.main-image {
+  
+  padding-top: 14em;
+  padding-bottom: 1em;
+}
+.kit-container h2 {
+  font-size: 1.5rem;
+}
+}
+
+
+/*---------------------------Media Query-1200px---------------------------*/
+
+@media screen and (min-width: 1200px) {
+  nav ul {
+    flex-direction: row;
+    display: flex;
+  }
+  nav .toggle {
+    display: none;
+  }
+  .header-nav {
+    
+    margin-right: 0%;
+}
+    #background-video,
+  .video-overlay {
+    margin-top: 12.5%;
+    margin-left: .5%;
+    width: 98vw;
+    height: 75vh;
+  }
+  .main-content 
+  {
+  margin-top: 32vh;
+  }
+  .main-footer
+  {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: auto auto auto auto auto;
+  }
+  .content{
+  display: grid;
+
+  grid-template-columns: 60% auto;
+  }
+  .image-column
+  {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  padding-bottom: 2%;
+
+  }
+
+  .contact-container
+  {
+  display: grid;
+
+  grid-template-columns: 40% 60%;
+  
+  }
+  .contact-form {
+    width: 65%;
+    
+      height: 90%;
+  
+   
+  }
+  textarea {
+    
+    height:100px;
+  }
+  /* .contact-content
+  {
+
+  width:85%
+
+  } */
+  .main-footer li {
+
+  margin-left: -12%;
+  }
+
+  .supplies-image
+  {
+    
+    padding-top: 18em;
+    padding-bottom: 2em;
+  }
+  .spottext {
+    font-size: 6rem;
+  }
+    .main-image-contact
+  {
+    
+    padding-top: 16em;
+    
+  }
+  
+    .main-image
+  {
+    
+    padding-top: 18em;
+    padding-bottom: 2em;
+  }
+  .kit-container h2 {
+    font-size: 2.5rem;
+  }
+  }

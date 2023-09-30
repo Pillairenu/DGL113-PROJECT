@@ -1,0 +1,263 @@
+<!--
+Author: Renu Gopinatha Pillai
+Purpose: Includes HTML code that define the structure, content, and layout of supplies page.
+Last Modified: 2023-04-06
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment G</title>
+  <link rel="stylesheet" href="style.css">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  </head>
+  <body>
+    <header>
+    <div class="header-logo">
+      <a href="index.html"><img src="image/logo_3.png" alt="Glass Expression Logo" class="logo-img"></a>
+    
+    <div class="header-nav">
+        <nav>
+          <ul id="nav-items">
+            <li><b><a href="index.html">HOME</a></b></li>
+            <li><b><a href="supplies.html">SUPPLIES</a></b></li>
+            <li><b><a href="gallery.html">GALLERY</a></b></li>
+            <li><b><a href="contact.html">CONTACT US</a></b></li>
+          </ul>
+            <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+          </nav>
+    </div>
+    </div>
+    </header>
+    <div class="supplies-image">
+      <h1 class="spottext"> Shop Stained Glass Supplies from Glass Expression</h1>
+    </div> 
+    <main>
+      
+      <h3 class="main-content-gallery">Supplies List</h3>
+      <div class="gallery-content">
+        <p>If you need stained glass supplies, Glass Expression either has it or will find it.
+           Whether you are looking for a soldering iron, glass crafting tools, fusing supplies, 
+           or just ideas we have it all! We seek to be your source for all of your glass projects. 
+           Come see our complete range of products at our store in Comox.
+           <a href="contact.html">Visit us today!</a></p>
+
+        <!-- BUTTON TO SEE PDF DOC OF SUPPLIES LIST --> 
+
+           <div class="button-container">
+           <button onclick="location.href='files/Stained Glass Supplies.pdf';" class="button">CLICK HERE TO SEE THE SUPPLIES LIST</button>
+          </div>
+     </div>
+
+     <!-- IMAGE THUMBNAILS OF SUPPLIES --> 
+     <div class="supply-image-container">
+     
+    <a target="_blank" href="image/supply-2.jpg">
+      <img src="image/supply-2.jpg" alt="supplies" class="supplies-img">
+    </a>
+    <a target="_blank" href="image/supply-3.jpg">
+      <img src="image/supply-3.jpg" alt="supplies" class="supplies-img">
+    </a>
+    <a target="_blank" href="image/supply-4.jpg">
+      <img src="image/supply-4.jpg" alt="supplies" class="supplies-img">
+    </a>
+    <a target="_blank" href="image/supply-5.jpg">
+      <img src="image/supply-5.jpg" alt="supplies" class="supplies-img">
+    </a>
+    <a target="_blank" href="image/supply-1.jpg">
+      <img src="image/supply-1.jpg" alt="supplies" class="supplies-img">
+    </a>
+  </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="myImage" alt="">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+
+<!-- TABLE FOR DISPLAYING KITS --> 
+
+  <div class="kit-container">
+
+    <h2>Stained Glass Kits(Prices subject to change without notice, please contact for current pricing)</h2>
+    <table>
+      
+      <tr>
+        <td>
+          
+          <img src="image/kit-7.jpg" alt="Tool Kit" id="img01" class="kit-img">
+      
+        </td>
+         
+          <td>Basic Kit</td>
+          <td>100 watt Soldering Iron<br>
+            Coil Iron Stand <br>
+            Toyo Dry wheel Cutter <br>
+            1/2 Carborendum Stone <br>
+            Curved Grozier/ Breaker<br>
+            16" Straight Edge <br>
+         <td>$168.26(plus taxes)</td>
+      </tr>
+      <tr>
+        <td>
+          
+          <img src="image/kit-6.jpg" alt="Tool Kit" id="img02" class="kit-img">
+        
+        
+        </td>
+        <td> Standard Kit</td>
+        <td>100W Soldering Iron<br>
+
+          Coil Iron Stand<br>
+          Toyo Brass Supercutter<br>
+          Curved Grozier/Breaker<br>
+          1/2 Carborendum Stone<br>
+          16" Straight Edge w/cork<br>
+          Burnisher/Fid<br>
+          Flux Brush<br>
+          50/50 Solder<br>
+          Sharpie Marker<br>
+          Cutter oil<br>
+          Old Masters Flux<br>
+          7/32 Copper Foil<br></td>
+          <td>$251.86(plus taxes)</td>
+      </tr>
+      <tr>
+        <td><img src="image/kit-4.webp" alt="Tool Kit"  id="img03" class="kit-img"></td>
+        <td>Super Kit</td>
+        <td>
+          100W Soldering Iron <br>
+          Temperature Control Station<br>
+          
+          Coil Iron Stand<br>
+          Toyo Brass Supercutter<br>
+          Curved Grozier/Breaker<br>
+          1/2 Carborendum Stone<br>
+          16" Straight Edge w/cork<br>
+          Burnisher/Fid<br>
+          Sharpie Marker<br>
+          Flux Brush<br>
+          50/50 Solder<br>
+          Copper Patina<br>
+          Black Patina<br>
+          Old Masters Flux<br>
+          7/32 Copper Foil<br>
+          3/16 Copper Foil<br>
+          Cutter oil<br>
+          </td>
+          
+          <td>$345.00(plus taxes)</td>
+      </tr>
+    </table>
+    
+  </div>
+<!-- TABLE FOR DISPLAYING GRINDER --> 
+  <div class="kit-container">
+
+    <h2>Stained Glass Grinders (Prices subject to change without notice, please contact for current pricing)</h2>
+ 
+  <table>
+    
+    <tr>
+      <td><img src="image/grinder3.jpg" alt="Grinders" id="img04" class="grinder-img"></td>
+       
+        <td>Inland Wizling CG</td>
+        <td>1/20 HP - 3450 RPM <br>
+
+        15 oz/in Torque <br>
+        
+        Thermally protected <br>
+        
+        Reversible 9"x10" Table Top Grid<br>
+        
+        Lift-off Reservoir<br>
+        
+        1/4" & 3/4" Grinding Head<br>
+        
+        Five Year Warranty</td>
+      <td>$295.00(plus taxes)</td>
+    </tr>
+    <tr>
+      <td><img src="image/grinder4.jpg" alt="Grinders" id="img05" class="grinder-img"></td>
+      <td> Inland Wiz CG</td>
+      <td>1/16 HP - 3500 RPM <br>
+
+        30 oz/in Torque<br>
+        
+        Thermally protected <br>
+        
+        Reversible 9"x10" Table Top Grid <br>
+        
+        Lift-off Reservoir <br>
+        
+        1/4" & 3/4" Grinding Head <br>
+        
+        Five Year Warranty</td>
+        <td>$345.00(plus taxes)</td>
+    </tr>
+  </table>
+  <p>For more information about product and their current price, <a href="contact.html">CONTACT US TODAY</a>.</p>
+</div>
+
+    </main>
+
+
+    <footer>
+      <div class="main-footer">
+         <div class="footer-content1">
+          <h3>Glass Expressions</h3>
+          <p>2925 Comox Road <br>
+              Courtenay, B.C. </p>
+              <p>Tel: <a href="tel:(250)339-7739">(250) 339-7739</a></p>
+              <p>Email: <a href="mailto:glassexp@shaw.ca">glassexp@shaw.ca</a></p>
+
+         </div>
+
+         <div class="footer-content2">
+          <h3>Hours</h3>
+          
+              <p>Tuesday – Saturday:10:00 AM –2:00 PM</p>
+              <p>Sundays, Mondays  & Holidays: Closed</p>
+              
+         </div>
+
+         <div class="footer-content3">
+          <h3>Services</h3>
+          <ul>
+              <li>Stained glass artwork</li>
+              <li>Glassworking tools & Supplies</li>
+              <li>Stained glass repairs</li>
+          </ul>
+              
+         </div>
+
+         <div class="footer-content4">
+          <h3>Follow Us</h3>
+          <p><a href="https://www.facebook.com/pages/Glass-Expressions/111703145537772?fref=ts" target="_blank" ><img src="image/facebook.png" alt="facebook" style="width:42px;height:42px;"></a></p>
+          
+        </div>
+       
+      </div>   
+
+      </footer>
+      <p class="footer-disclaimer"><small>  This is a fictional website that was designed and coded as an educational exercise.Copyright@2022 </small></p>
+
+      <script src="app.js"></script>
+    </body>
+    </html>

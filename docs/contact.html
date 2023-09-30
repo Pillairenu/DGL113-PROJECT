@@ -1,0 +1,155 @@
+<!--
+Author: Renu Gopinatha Pillai
+Purpose: Includes HTML code that define the structure, content, and layout of contact page.
+Last Modified: 2023-04-06
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment G</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  </head>
+  <body>
+    <header>
+    <div class="header-logo">
+      <a href="index.html"><img src="image/logo_3.png" alt="Glass Expression Logo" class="logo-img"></a>
+    
+    <div class="header-nav">
+        <nav>
+          <ul id="nav-items">
+            <li><b><a href="index.html">HOME</a></b></li>
+            <li><b><a href="supplies.html">SUPPLIES</a></b></li>
+            <li><b><a href="gallery.html">GALLERY</a></b></li>
+            <li><b><a href="contact.html">CONTACT US</a></b></li>
+          </ul>
+            <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+          </nav>
+    </div>
+    </div>
+    </header>
+    <div class="main-image-contact">
+      <h1 class="spottext"> Contact Glass Expression!</h1>
+    </div> 
+    <main>
+    
+      <div class="contact-container">
+        <div class="contact-content">
+                <section class="contact-section">
+                  <h3>Address</h3>
+                  <hr>
+                  <p>
+                    Glass Expressions <br>
+                    2925 Comox Road <br>
+                    Courtenay, B.C. <br>
+                  </p>
+                </section>
+
+                <section class="contact-section">
+                  <h3>Contact Us</h3>
+                  <hr>
+                  <p><b>Tel: </b><a href="tel:(250)339-7739">(250) 339-7739</a></p>
+                  <p><b>Email: </b><a href="mailto:glassexp@shaw.ca">glassexp@shaw.ca</a></p>
+                </section>  
+                <section class="contact-section">
+                  <h3>Hours</h3>
+                  <hr>
+                  <p> Tueday – Saturday: 10:00 AM – 2:00 PM</p>
+                  <p> Sundays, Mondays & Holidays: Closed</p>
+                </section> 
+            
+        </div>
+
+
+      
+        <!-- CONTACT FORM --> 
+        <div class="contact-form">
+
+          <!-- HTML code for the modal box -->
+          <div id="myModal1" class="modal1">
+            <div class="modal-content1">
+              <span class="close1">&times;</span>
+              <p id="modal-message1">Your message has been sent. We will get back to you as soon as possible.</p>
+              <button id="okbtn">OK</button>
+              
+            </div>
+          </div>
+
+
+          <h3 class="form-heading">Get In Touch</h3>
+          <!--action="mailto:someone@example.com"--> 
+          <form method="post" action="https://learndigital.dev/" id="myForm">
+              
+                <label for="fname"> Name</label> <span id="fname-error"></span>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">       
+              
+                <label for="email">Email</label> <span id="email-error"></span>
+                <input type="text" placeholder="Enter Email" name="email" id="email">
+                
+             
+                <label for="phone"> Phone Number</label> <span id="phone-error"></span>
+                <input type="text" id="phone" name="phone" placeholder="Enter phone Number">
+             
+                <label for="subject">Subject</label> <span id="subject-error"></span>
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+               
+              <input type="submit" value="Submit" id="myBtn">
+            
+          </form>
+        </div>
+    </div>
+<iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1116722.8694815845!2d-125.41656488759611!3d49.09473275349349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xecadc2b5150bd5ea!2sGlass%20Expressions!5e0!3m2!1sen!2sca!4v1669516064763!5m2!1sen!2sca"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+
+    </main>
+    <footer>
+      <div class="main-footer">
+         <div class="footer-content1">
+          <h3>Glass Expressions</h3>
+          <p>2925 Comox Road <br>
+              Courtenay, B.C. </p>
+              <p>Tel: <a href="tel:(250)339-7739">(250) 339-7739</a></p>
+              <p>Email: <a href="mailto:glassexp@shaw.ca">glassexp@shaw.ca</a></p>
+
+         </div>
+
+         <div class="footer-content2">
+          <h3>Hours</h3>
+          
+              <p>Tuesday – Saturday:10:00 AM –2:00 PM</p>
+              <p>Sundays, Mondays  & Holidays: Closed</p>
+              
+         </div>
+
+         <div class="footer-content3">
+          <h3>Services</h3>
+          <ul>
+              <li>Stained glass artwork</li>
+              <li>Glassworking tools & Supplies</li>
+              <li>Stained glass repairs</li>
+          </ul>
+              
+         </div>
+
+         <div class="footer-content4">
+          <h3>Follow Us</h3>
+          <p><a href="https://www.facebook.com/pages/Glass-Expressions/111703145537772?fref=ts" target="_blank" ><img src="image/facebook.png" alt="facebook" style="width:42px;height:42px;"></a></p>
+          
+        </div>
+       
+      </div>   
+
+      </footer>
+      <p class="footer-disclaimer"><small> This is a fictional website that was designed and coded as an educational exercise.Copyright@2022  </small></p>
+
+      <script src="app.js"></script>
+    </body>
+    </html>
